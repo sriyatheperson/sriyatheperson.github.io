@@ -1,2 +1,2 @@
-# sriyatheperson.github.io
-Sriya's Personal Website
+# Sriya Kappagantu
+#### Student, Techie, Debater
