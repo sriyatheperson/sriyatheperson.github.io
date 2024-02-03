@@ -1,2 +1,2 @@
-# Sriya Kappagantu
-#### Student, Techie, Debater
+# Sriya Kappagantu Personal Website
+This is the code for my personal website.
