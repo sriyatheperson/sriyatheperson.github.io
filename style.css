@@ -240,12 +240,21 @@ mark{
     width: 100%;
 }
 
-.table caption {
-    color: lightgray;
-    caption-side: bottom;
+.caption{
+    text-align: center;
 }
 
-.table caption a{
+.caption ul{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.caption a{
     color: #91CB3E;
     text-decoration: none;
 }
@@ -370,7 +379,6 @@ mark{
     flex-wrap: wrap;
     justify-content:space-evenly;
     margin:30px;
-    
 }
 
 .project {
@@ -444,3 +452,127 @@ mark{
     border-radius: 15px;
 }
 
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#F75C03;
+        position:fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position:absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .header-text{
+        margin-top: 70%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .rotating-jobs{
+        font-weight: bold;
+        height: 15px;
+    }
+    @keyframes animation {
+        0%,
+        100%{
+            top: 0;
+        }
+        20%{
+            top: 0;
+        }
+        25%{
+            top: -20px;
+        }
+        40%{
+            top: -20px;
+        }
+        45%{
+            top: -37px;
+        }
+        60%{
+            top: -37px;
+        }
+        65%{
+            top: -55px;
+        }
+        80%{
+            top: -55px;
+        }
+        85%{
+            top: -70px;
+        }
+    }
+
+    /* About */
+    .about-heading{
+        font-size: 30px;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+    }
+
+    /* Work Experience */
+
+    .work-row{
+        padding: 10px 10%;
+        text-align: center;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .work-list-img img{
+        height: 100%;
+        width: 50%;
+        flex-basis: 35%;
+    }
+    
+    .work-list-text{
+        height: 100%;
+        width: 50%;
+        flex-basis: 55%;
+    }
+
+    .collapsible{
+        width: 100%;
+    }
+
+    .content ul {
+        text-align: center;
+    }
+
+    /* classes */
+
+    .caption ul{
+        padding: 0px 30%;
+    }
+
+    .caption ul li{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

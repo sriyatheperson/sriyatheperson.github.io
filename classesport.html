@@ -7,17 +7,20 @@
         <title>Sriya Kappagantu - Work Experience</title>
         <link rel="icon" type="image/x-icon" href="images/justlion.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <div class="container">
             <nav> 
                 <img src="images/logo2.png" alt="Sriya" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="workexperience.html">Work Experience</a></li>
                     <li> <a href="classesport.html">Classes / Portfolio</a></li>
                     <li> <a href="resume.html">Resume</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="expand()"></i>
             </nav>
         </div>
         <div class="classes">
@@ -314,18 +317,21 @@
                             </td>
                         </tr>
                     </tbody>
-                    <caption> 
-                        <br/>
-                        Blue = Electrical Engineering & Computer Science class, 
-                        Purple = UGBA (Haas business class), Orange = Other Technical, Pink = Teaching, Yellow = Research, 
-                        Grey = Other Non-Tech Requirement<br />
-                        You can click the bubbles above each class to see the course website. <br />
-                        This is inspired by the Academics portion <a href="https://jonmurata.me/#">on this site</a> and 
-                        <a href="https://www.aniruthn.com/teaching">this one</a>
-                        <br />
-                        <br />
-                    </caption>
                 </table>
+            </div>
+            <div class="caption">
+                <ul> 
+                    <br/>
+                    <li> <button type="button" class="btn btn-blue tooltip">EECS</button> </li>
+                    <li> <button type="button" class="btn btn-purple tooltip">UGBA</button> </li>
+                    <li> <button type="button" class="btn btn-orange tooltip">Technical</button> </li>
+                    <li> <button type="button" class="btn btn-pink tooltip">Teaching</button> </li>
+                    <li> <button type="button" class="btn btn-yellow tooltip">Research</button> </li>
+                    <br />
+                    <br />
+                </ul>
+                <p>You can click the bubbles above each class to see the course website. This is inspired by the Academics portion <a href="https://jonmurata.me/#">on this site</a> and 
+                <a href="https://www.aniruthn.com/teaching">this one</a> </p>
             </div>
         </div>
         <div class="projects-all">
@@ -465,6 +471,7 @@
 
 
     </div>
+    <script src="navbar.js"></script>
     </body>
 
 </html>

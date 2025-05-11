@@ -8,18 +8,21 @@
         <link rel="icon" type="image/x-icon" href="images/justlion.png">
         <link rel="stylesheet" href="style.css">
         <meta name="google-site-verification" content="hzz97IVXiHZICq4vTGFGvXOx4qM-LZhMS6lM5r4vy1U" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <div id="header">
             <div class="container">
                 <nav> 
                     <img src="images/logo2.png" alt="Sriya" class="logo">
-                    <ul>
+                    <ul id="sidemenu">
                         <li> <a href="index.html">Home</a></li>
                         <li> <a href="workexperience.html">Work Experience</a></li>
                         <li> <a href="classesport.html">Classes / Portfolio</a></li>
                         <li> <a href="resume.html">Resume</a></li>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="expand()"></i>
                 </nav>
             </div>
             <div class="header-text">
@@ -62,6 +65,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="navbar.js"></script>
 
     </body>
 </html>
